@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-handwriting {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+/* 🚨 THIS FIXES THE LAYOUT ISSUE */
+/* It forces the app to fill the screen instead of shrinking to the corner */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
